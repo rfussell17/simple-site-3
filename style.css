@@ -1,3 +1,7 @@
+* {
+
+box-sizing: border-box;}
+
 body {
   margin: 0 auto; 
   font-family: 'Montserrat', sans-serif;
@@ -9,19 +13,24 @@ body {
 
 .container {
   width: 90%;
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
 }
 
 main {
   justify-content: space-around;  
+  background-color: #404040;
   background-image: url("img/ribs.jpg");
+  background-position: center;
+  padding: 0 .25em 1em;
+}
+
+aside {
+  padding: 2em 1em;
 }
 
 
-span {
-  font-weight: 800;
+strong {
+  font-weight: 900;
 }
 
 h1 {
@@ -52,7 +61,7 @@ h3 {
   margin: 0 2em 1.5em 1.5em;
 }
 
-header h3 {
+header-h3 {
   font-weight: 800;
   color:#f18119;
   font-size: .5em;
@@ -103,21 +112,32 @@ footer p {
   font-size: .5em;
   width: 35%;
   margin: 0 auto;
+  letter-spacing: 1px;
 
 }
 
 @media (min-width: 675px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
+body{
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
 
   main {
-    width: 60%;
+    width: 65%;
     background-size: cover;
   }
 
   aside {
-    width: 30%;
+    width: 35%;
   }
 }
